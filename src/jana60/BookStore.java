@@ -21,6 +21,12 @@ public class BookStore {
 		double prezzoConsigliato = 18.00;
 		double prezzoFinale = 17.10;
 		double sconto = 0.05;
+		double valoreSconto = prezzoConsigliato - prezzoFinale;
+		
+		System.out.println("Prezzo consigliato: " + prezzoConsigliato + " euro");
+		System.out.println("Scontato del: " + sconto * 100 + "%");
+		System.out.println("Meno " + valoreSconto + " euro");
+		System.out.println("Prezzo finale: " + prezzoFinale);
 		//dimensioni
 		float altezza = 21.0f;
 		float larghezza = 13.7f;
