@@ -4,16 +4,16 @@ public class SistemiOperativi {
 
 	public static void main(String[] args) {
 		//
-		double macUsers = 3;
-		double windowsUsers = 20;
-		double totaleUtenti = macUsers + windowsUsers;
+		int macUsers = 3;
+		int windowsUsers = 20;
+		int totaleUtenti = macUsers + windowsUsers;
 		
 		System.out.println("MAC Users: " + macUsers);
 		System.out.println("Windows Users: " + windowsUsers);
 		System.out.println("Totale: " + totaleUtenti);
 		
-		double perMac = macUsers * 100 / totaleUtenti;
-		double perWindows = windowsUsers * 100 / totaleUtenti;
+		double perMac = (double)macUsers * 100 / (double)totaleUtenti;
+		double perWindows = (double)windowsUsers * 100 / (double)totaleUtenti;
 		
 		System.out.println("Percentuale Mac: " + perMac);
 		System.out.println("Percentuale Windows " + perWindows);
