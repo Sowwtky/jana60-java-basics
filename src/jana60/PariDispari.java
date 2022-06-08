@@ -50,28 +50,33 @@ public class PariDispari {
 			 Random randomGenerator = new Random();
 			 int numeroComputer = randomGenerator.nextInt(6);
 			 
-			 //stampo a schermo i numeri scelti
-			 System.out.println("Hai scelto: " + numeroUtente);
-			 System.out.println("Il computer ha scelto: " + numeroComputer);
 			 
 			 //faccio somma due numeri
 			 int somma = numeroUtente + numeroComputer;
 			 
-			 //se somma pari (diviso due = resto 0)
-			 if((somma % 2 ) == 0) {
-				if (sceltaUtentePari) {
-					System.out.println("Hai vinto!");
+			 if (numeroUtente >= 0 && numeroUtente <= 5) {
+				 //stampo a schermo i numeri scelti
+				 System.out.println("Hai scelto: " + numeroUtente);
+				 System.out.println("Il computer ha scelto: " + numeroComputer);
+				//se somma pari (diviso due = resto 0)
+				if ((somma % 2) == 0) {
+					if (sceltaUtentePari) {
+						System.out.println("Hai vinto!");
+					} else {
+						System.out.println("Hai perso!");
+					}
+
+					//se somma dispari
 				} else {
-					System.out.println("Hai perso!");
+					if (!sceltaUtentePari) {
+						System.out.println("Hai vinto!");
+					} else {
+						System.out.println("Hai perso!");
+					}
 				}
 				
-			 //se somma dispari
-			 }else{
-				if (!sceltaUtentePari) {
-					System.out.println("Hai vinto!");
-				}else{
-					System.out.println("Hai perso!");
-				}	
+			} else {
+				System.out.println("Numero non valido");
 			}
 		 }
 		
