@@ -25,7 +25,7 @@ public class CicloFor {
 			somma = somma + i;
 			System.out.println("somma = " + somma);
 		}
-		System.out.println(somma);
+		System.out.println("La somma totale é: " + somma);
 	}
 
 }
